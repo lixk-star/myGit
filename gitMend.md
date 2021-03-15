@@ -227,3 +227,46 @@ git fetch origin tag v7.0 拉取远程一个分支
 git remote prune origin 删除远程已经删除的分支
 
 git log origin/master 查看远程分支记录
+
+git refspec
+
+ git push --set-upstream origin dev 推送至远程并创建一样的分支
+
+git checkout -b dev origin/dev  本地创建并关联远程
+
+git checkout --track origin/dev 本地创建并关联远程 
+
+git push origin src(源):dev（目标）  
+
+git pull origin src(源):dev（目标）
+
+git push origin --detele dev 删除远程分支
+
+git 裸库（没有工作区）
+
+git init --bare 建裸库
+
+子模块
+
+git submodule
+
+git submodule add 路径  目录
+
+git clone submodule add 路径  目录 --recursive  包括git clone子模块
+
+git submodule foreach git pull  更新全部子模块
+
+git submodule  init 单个更新1
+
+git sumodule updatae  --recursive  单个更新2
+
+git rebase -i cmmit_id 合并
+
+git cherry-pick commit_id
+
+
+
+git mergr dev
+
+git rebase dev
+
