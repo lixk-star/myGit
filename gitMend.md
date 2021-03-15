@@ -64,6 +64,8 @@ git log --pretty=oneline 以行显示
 
 git log -n  指定显示消息
 
+git reflog 操作日志
+
 git branch
 
 git branch mew_branch
@@ -80,17 +82,27 @@ git branch 文件名（创建）
 
 git checkout 文件名 （切换分支）
 
-git checkout -b 文件名  （创建并切换）
+git checkout -  来回切换
 
-git branch -d 文件名 删除分支
+git checkout -b 分支名  （创建并切换）
+
+git branch -d 分支名 删除分支 （不能自己删自己）
+
+git branch -D 强制删除
 
 git merge 文件名 （合并分支）
 
+git branch -v  最前提交信息
 
+解决冲突后
+
+git add  处理好了
+
+git commit -m  提交
 
 git log --graph
 
-git merge --no-ff 分支名（保留分支信息）
+git merge --no-ff 分支名（保留分支信息）禁用fast-forward
 
 
 
